@@ -12,6 +12,10 @@ public class CharacterController : MonoBehaviour
     GameObject cam;
     Rigidbody myRigidbody;
 
+    bool isOnGround;
+    public GameObject groundChecker;
+    public LayerMask groundLayer;
+
     void Start()
     {
         cam = GameObject.Find("Main Camera");
@@ -22,6 +26,9 @@ public class CharacterController : MonoBehaviour
     
     void Update()
     {
+        isOnGround = Physics.CheckSphere(groundChecker.transform.position, 0.1f, groundLayer);
+        //Jumping Slide page 27
+
         //transform.position = transform.position + (transform.forward * Input.GetAxis("Vertical") * maxSpeed) + (transform.right * Input.GetAxis("Horizontal") * maxSpeed);
 
         Vector3 newVelocity = transform.forward * Input.GetAxis("Vertical") * maxSpeed;
