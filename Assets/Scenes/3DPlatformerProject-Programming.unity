@@ -249,10 +249,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bc6df71f12ce95c4983da9c8c190b211, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  groundChecker: {fileID: 0}
+  maxSpeed: 0.01
+  normalSpeed: 10
+  sprintSpeed: 20
+  rotationSpeed: 2
+  camRotationSpeed: -1.5
+  jumpForce: 300
+  groundChecker: {fileID: 1610898869}
   groundLayer:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 8
+  maxSprint: 5
 --- !u!136 &983294255
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -360,7 +367,7 @@ GameObject:
   - component: {fileID: 1417165717}
   - component: {fileID: 1417165716}
   - component: {fileID: 1417165715}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Floor
   m_TagString: Untagged
   m_Icon: {fileID: 0}
