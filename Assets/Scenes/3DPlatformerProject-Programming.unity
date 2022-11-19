@@ -248,6 +248,7 @@ MonoBehaviour:
   myPlatform: {fileID: 2012586528}
   myStartPoint: {fileID: 1960190326}
   myEndPoint: {fileID: 1715794215}
+  speed: 0.13
 --- !u!4 &908129983
 Transform:
   m_ObjectHideFlags: 0
