@@ -12,7 +12,7 @@ public class CharacterController : MonoBehaviour
     float camRotation = 0.0f;
     public float rotationSpeed = 2.0f;
     public float camRotationSpeed = -1.5f;
-    public float jumpForce = 700.0f;
+    public float jumpForce = 200.0f;
     GameObject cam;
     Rigidbody myRigidbody;
 
@@ -39,7 +39,7 @@ public class CharacterController : MonoBehaviour
     {
         isOnGround = Physics.CheckSphere(groundChecker.transform.position, 0.1f, groundLayer);
 
-        if (isOnGround == false && Input.GetKeyDown(KeyCode.Space))
+        if (isOnGround == true && Input.GetKeyDown(KeyCode.Space))
         {
             myRigidbody.AddForce(transform.up * jumpForce);
         }
