@@ -39,7 +39,7 @@ public class CharacterController : MonoBehaviour
     {
         isOnGround = Physics.CheckSphere(groundChecker.transform.position, 0.1f, groundLayer);
 
-        if (isOnGround == true && Input.GetKeyDown(KeyCode.Space))
+        if (isOnGround == false && Input.GetKeyDown(KeyCode.Space))
         {
             myRigidbody.AddForce(transform.up * jumpForce);
         }
