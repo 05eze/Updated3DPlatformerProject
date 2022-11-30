@@ -12,7 +12,7 @@ public class CharacterController : MonoBehaviour
     float camRotation = 0.0f;
     public float rotationSpeed = 2.0f;
     public float camRotationSpeed = -1.5f;
-    public float jumpForce = 200.0f;
+    public float jumpForce = 50.0f;
     GameObject cam;
     Rigidbody myRigidbody;
 
