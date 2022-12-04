@@ -29,7 +29,6 @@ public class CharacterController : MonoBehaviour
     {
         myAnim = GetComponentInChildren<Animator>();
 
-        Cursor.lockState = CursorLockMode.Locked;
 
         sprintTimer = maxSpeed;
 
